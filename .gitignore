@@ -1,1 +1,2 @@
-/audios/*.mp3
+audios/*.mp3
+scripts/__pycache__/

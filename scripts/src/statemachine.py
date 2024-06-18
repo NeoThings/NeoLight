@@ -1,6 +1,9 @@
 import os
+import sys
+import cv2
 import time
 import psutil
+import argparse
 import configparser
 from multiprocessing import Process
 from transitions import Machine
@@ -8,10 +11,11 @@ from httpclient import httpClient
 from playaudio import playaudio
 from gtts import gTTS
 
-#HES: human exit sensor
+from cvmodule.cvinterface import CVInterface
+
 
 config = configparser.ConfigParser()
-config.read('wled.config')
+config.read('../config/wled.cfg')
 
 http_client = httpClient()
 wled_addr = "http://192.168.100.128/json"
