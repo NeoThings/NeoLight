@@ -37,7 +37,7 @@ flowchart LR
 
 ```bash
 pip install -r requirements.txt
-python4 neolight.py
+python3 neolight.py
 ```
 
 ### 用到的开源项目
